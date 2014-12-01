@@ -1,0 +1,5 @@
+@import 'sass-material-colors-map';
+// Inspired by https://github.com/nilskaspersson/Google-Material-UI-Color-Palette/
+@function material-color($color-name, $color-variant: 500) {
+  @return map-get(map-get($material-colors, $color-name), $color-variant)
+}
