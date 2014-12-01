@@ -1,4 +1,4 @@
-# Sass Material Colors
+# Sass Material Colors [![Gem Version](https://badge.fury.io/rb/sass-material-colors.svg)](http://badge.fury.io/rb/sass-material-colors)
 
 This gem makes it easy to use Google's [Material Design color palette](http://www.google.com/design/spec/style/color.html#color-color-palette) on your project.
 
