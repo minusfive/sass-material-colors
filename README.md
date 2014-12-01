@@ -42,14 +42,14 @@ The `material-color` function allows you to easily reference any color in the `_
 ```sass
 // Sass
 .my-cool-element
-  color: material-color('cyan', '400')
-  background: material-color('blue-grey', '600')
+  color: material-color(cyan, 400)
+  background: material-color(blue-grey, 600)
 ```
 
 The `material-color` function takes 2 arguments:
 
-- `$color-name` **(Required)** [Quoted String]: Lower-case, dasherized color name from Google's [palette](http://www.google.com/design/spec/style/color.html#color-color-palette) (e.g. `pink`, `amber`, `blue-grey`, `deep-orange`, etc.), as a quoted string (to prevent conflicts with built-in color values).
-- `$color-variant` _(optional)_ [Quoted String. Default value: `500`]: Lower-case color variant number/code from Google's [palette](http://www.google.com/design/spec/style/color.html#color-color-palette) (e.g. `300`, `200`, `a100`, `a400`, etc.), as a quoted string (to prevent conflicts with built-in color values).
+- `$color-name` **(Required)** [String]: Lower-case, dasherized color name from Google's [palette](http://www.google.com/design/spec/style/color.html#color-color-palette) (e.g. `pink`, `amber`, `blue-grey`, `deep-orange`, etc.)
+- `$color-variant` _(optional)_ [String. Default value: `500`]: Lower-case color variant number/code from Google's [palette](http://www.google.com/design/spec/style/color.html#color-color-palette) (e.g. `300`, `200`, `a100`, `a400`, etc.)
 
 ### Predefined Sass Placeholder Selectors
 
@@ -57,7 +57,7 @@ You can include a list of [extendable](http://sass-lang.com/documentation/file.S
 
 ```sass
 // Sass
-@import `sass-material-colors-placeholders`
+@import 'sass-material-colors-placeholders'
 ```
 
 This will add a `%color-...` and `%bg-color-...` [placeholder selector](http://sass-lang.com/documentation/file.SASS_REFERENCE.html#placeholder_selectors_) for each color name and variant found in Google's [palette](http://www.google.com/design/spec/style/color.html#color-color-palette) to your project, which you can then extend in your stylesheets like so:
@@ -75,7 +75,7 @@ You can include a list of predefined classes in your project by importing the `s
 
 ```sass
 // Sass
-@import `sass-material-colors-classes`
+@import 'sass-material-colors-classes'
 ```
 
 This will add a `.color-...` and `.bg-color-...` class for each color name and variant found in Google's [palette](http://www.google.com/design/spec/style/color.html#color-color-palette)  to your stylesheets, which you can then use directly in your markup like so:
