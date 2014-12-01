@@ -42,14 +42,14 @@ The `material-color` function allows you to easily reference any color in the `_
 ```sass
 // Sass
 .my-cool-element
-  color: material-color(cyan, 400)
-  background: material-color(blue-grey, 600)
+  color: material-color('cyan', '400')
+  background: material-color('blue-grey', '600')
 ```
 
 The `material-color` function takes 2 arguments:
 
-- `$color-name` **(Required)**: Lower-case, dasherized color name from Google's [palette](http://www.google.com/design/spec/style/color.html#color-color-palette) (e.g. `pink`, `amber`, `blue-grey`, `deep-orange`, etc.)
-- `$color-variant` _(optional)_ [Default value: `500`]: Lower-case color variant number/code from Google's [palette](http://www.google.com/design/spec/style/color.html#color-color-palette) (e.g. `300`, `200`, `a100`, `a400`, etc.)
+- `$color-name` **(Required)** [Quoted String]: Lower-case, dasherized color name from Google's [palette](http://www.google.com/design/spec/style/color.html#color-color-palette) (e.g. `pink`, `amber`, `blue-grey`, `deep-orange`, etc.), as a quoted string (to prevent conflicts with built-in color values).
+- `$color-variant` _(optional)_ [Quoted String. Default value: `500`]: Lower-case color variant number/code from Google's [palette](http://www.google.com/design/spec/style/color.html#color-color-palette) (e.g. `300`, `200`, `a100`, `a400`, etc.), as a quoted string (to prevent conflicts with built-in color values).
 
 ### Predefined Sass Placeholder Selectors
 
