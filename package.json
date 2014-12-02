@@ -1,6 +1,6 @@
 {
   "name": "sass-material-colors",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Google's Material Design colors for Sass/Scss",
   "main": "sass/_sass-material-colors.scss",
   "scripts": {
