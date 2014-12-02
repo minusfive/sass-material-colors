@@ -25,5 +25,5 @@ end
 # Make the sass_material_colors:update_version a pre-requisite
 # for :release, and publish to npm after :release
 task :release => "sass_material_colors:update_version" do
-  Rake::Task['sass_material_colors:npm_publish']
+  Rake::Task['sass_material_colors:npm_publish'].execute
 end
