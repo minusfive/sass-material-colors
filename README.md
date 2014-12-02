@@ -4,7 +4,7 @@ An easy way to use Google's [Material Design color palette](http://www.google.co
 
 ## Installation
 
-Sass Material Colors can be included as a [Ruby Gem](#ruby-gem), or a [Bower component](#bower-component).
+Sass Material Colors can be included as a [Ruby Gem](#ruby-gem), a [Bower component](#bower-component), or a [Node Packaged Module (npm)](#npm).
 
 ### Ruby Gem
 
@@ -34,6 +34,14 @@ Install `sass-material-colors` as a development dependency:
 $ bower install --save-dev sass-material-colors
 ```
 
+### Node Packaged Module (npm)
+
+Install `sass-material-colors` as a development dependency:
+
+```bash
+$ npm install --save-dev sass-material-colors
+```
+
 ## Usage
 
 Import the colors map + function to your project:
@@ -43,11 +51,16 @@ Import the colors map + function to your project:
 @import 'sass-material-colors'
 ```
 
-If you're using Bower, you may need to use the relative path to the main file, e.g.:
+If you're using Bower or npm, you may need to use the relative path to the main file, e.g.:
 
 ```sass
 // Sass
+
+// Bower
 @import 'bower_components/sass-material-colors/sass/sass-material-colors'
+
+// npm
+@import 'node_modules/sass-material-colors/sass/sass-material-colors'
 ```
 
 By importing this file, a `$material-colors` [Sass map](http://sass-lang.com/documentation/file.SASS_REFERENCE.html#maps) will be added to your Sass project, with all the colors from Google's [palette](http://www.google.com/design/spec/style/color.html#color-color-palette), as well as a [`material-color` function](#the-material-color-function), making it easy for you to reference any color in the spec from your stylesheets.
@@ -111,10 +124,12 @@ This will add a `.color-...` and `.bg-color-...` class for each color name and v
 
 ## TO-DO
 - [x] ~~Make it bower friendly~~
+- [x] ~~Make it npm friendly~~
 - [ ] Create ember-cli addon
-- [ ] Pre-compile placeholders and classes files
+- [ ] Pre-compile `-placeholders` and `-classes` files
 - [ ] Separate color (text) and background classes
 - [ ] Add tests
+- [ ] Add changelog
 
 ## Contributing
 
