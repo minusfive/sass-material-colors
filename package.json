@@ -14,10 +14,13 @@
     "sass",
     "scss",
     "material",
+    "design",
     "colors",
-    "functions",
-    "placeholder",
-    "extensions"
+    "palette",
+    "function",
+    "placeholders",
+    "extensions",
+    "classes"
   ],
   "author": "minusfive <mail@minusfive.com>",
   "license": "MIT",

@@ -12,10 +12,13 @@
     "sass",
     "scss",
     "material",
+    "design",
     "colors",
-    "functions",
+    "palette",
+    "function",
     "placeholders",
-    "extensions"
+    "extensions",
+    "classes"
   ],
   "license": "MIT",
   "ignore": [

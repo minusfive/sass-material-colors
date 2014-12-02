@@ -4,7 +4,7 @@ An easy way to use Google's [Material Design color palette](http://www.google.co
 
 ## Installation
 
-Sass Material Colors can be included as a [Ruby Gem](#ruby-gem), or a [Bower package](#bower-package).
+Sass Material Colors can be included as a [Ruby Gem](#ruby-gem), or a [Bower component](#bower-component).
 
 ### Ruby Gem
 
@@ -26,7 +26,7 @@ Or install it yourself as:
 $ gem install sass-material-colors
 ```
 
-### Bower Package
+### Bower Component
 
 Install `sass-material-colors` as a development dependency:
 
@@ -110,8 +110,11 @@ This will add a `.color-...` and `.bg-color-...` class for each color name and v
 ```
 
 ## TO-DO
+- [x] ~~Make it bower friendly~~
+- [ ] Create ember-cli addon
+- [ ] Pre-compile placeholders and classes files
+- [ ] Separate color (text) and background classes
 - [ ] Add tests
-- [ ] Make it bower friendly
 
 ## Contributing
 
