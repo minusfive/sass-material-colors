@@ -1,0 +1,14 @@
+{
+  "name": "sass-material-colors",
+  "description": "Google's Material Design color palette for Sass/Scss",
+  "tags": [
+    "material",
+    "design",
+    "colors",
+    "palette",
+    "function",
+    "placeholders",
+    "extensions",
+    "classes"
+  ]
+}
