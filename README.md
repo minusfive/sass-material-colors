@@ -1,8 +1,12 @@
 # Sass Material Colors [![Gem Version](https://badge.fury.io/rb/sass-material-colors.svg)](http://badge.fury.io/rb/sass-material-colors)
 
-This gem makes it easy to use Google's [Material Design color palette](http://www.google.com/design/spec/style/color.html#color-color-palette) on your project.
+An easy way to use Google's [Material Design color palette](http://www.google.com/design/spec/style/color.html#color-color-palette) on your Sass project.
 
 ## Installation
+
+Sass Material Colors can be included as a [Ruby Gem](#ruby-gem), or a [Bower package](#bower-package).
+
+### Ruby Gem
 
 Add this line to your application's Gemfile:
 
@@ -22,6 +26,14 @@ Or install it yourself as:
 $ gem install sass-material-colors
 ```
 
+### Bower Package
+
+Install `sass-material-colors` as a development dependency:
+
+```bash
+$ bower install --save-dev sass-material-colors
+```
+
 ## Usage
 
 Import the colors map + function to your project:
@@ -31,9 +43,16 @@ Import the colors map + function to your project:
 @import 'sass-material-colors'
 ```
 
-This will automatically import a `$material-colors` [Sass map](http://sass-lang.com/documentation/file.SASS_REFERENCE.html#maps) containing all the color names and values found in Google's [palette](http://www.google.com/design/spec/style/color.html#color-color-palette), and the handy [`material-color` function](#the-material-color-function), which allows you to easily reference any color in the `$material-colors` map from your Sass or Scss stylesheets.
+If you're using Bower, you may need to use the relative path to the main file, e.g.:
 
-Optionally, you can import a list of predefined [placeholder selectors](#predefined-sass-placeholder-selectors) and/or [classes](#predefined-classes) to your stylesheets.
+```sass
+// Sass
+@import 'bower_components/sass-material-colors/sass/sass-material-colors'
+```
+
+By importing this file, a `$material-colors` [Sass map](http://sass-lang.com/documentation/file.SASS_REFERENCE.html#maps) will be added to your Sass project, with all the colors from Google's [palette](http://www.google.com/design/spec/style/color.html#color-color-palette), as well as a [`material-color` function](#the-material-color-function), making it easy for you to reference any color in the spec from your stylesheets.
+
+Optionally, you can import a list of [placeholder selectors](#predefined-sass-placeholder-selectors) and/or [classes](#predefined-classes).
 
 ### The `material-color` Function
 
@@ -46,13 +65,15 @@ The `material-color` function allows you to easily reference any color in the `_
   background: material-color('blue-grey', '600')
 ```
 
-The `material-color` function takes 2 arguments:
+The `material-color` function takes 2 parameters:
 
 ##### `$color-name` String (quoted), Required
 > Lower-case, dasherized color name from Google's [palette](http://www.google.com/design/spec/style/color.html#color-color-palette) (e.g. `'pink'`, `'amber'`, `'blue-grey'`, `'deep-orange'`, etc.)  
 
 ##### `$color-variant` String (quoted), Optional [Default value: `500`]
 > Lower-case color variant number/code from Google's [palette](http://www.google.com/design/spec/style/color.html#color-color-palette) (e.g. `'300'`, `'200'`, `'a100'`, `'a400'`, etc.)
+
+It's important for these parameters to be quoted strings, in order to maintain compatibility with [Libsass](https://github.com/sass/libsass).
 
 ### Predefined Sass Placeholder Selectors
 
