@@ -2,7 +2,7 @@
 
 An easy way to use Google's [Material Design color palette](http://www.google.com/design/spec/style/color.html#color-color-palette) on your Sass project.
 
-[![Gem Version](https://badge.fury.io/rb/sass-material-colors.svg)](http://badge.fury.io/rb/sass-material-colors) [![npm version](https://badge.fury.io/js/sass-material-colors.svg)](http://badge.fury.io/js/sass-material-colors)
+[![Gem Version](https://badge.fury.io/rb/sass-material-colors.svg)](http://badge.fury.io/rb/sass-material-colors) [![Bower version](https://badge.fury.io/bo/sass-material-colors.svg)](http://badge.fury.io/bo/sass-material-colors) [![npm version](https://badge.fury.io/js/sass-material-colors.svg)](http://badge.fury.io/js/sass-material-colors)
 
 ## Installation
 
