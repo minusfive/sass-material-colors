@@ -9,12 +9,15 @@
  * @param {string} [color-variant='500']  - quoted, lowercase color variant (e.g.
  *                                          '200', 'a100')
  */
-@function material-color($color-name, $color-variant: '500') {
+@function material-color($color-name, $color-variant: 500) {
+	@if type-of($color-variant)  == 'number' {
+		$color-variant:inspect($color-variant);
+	}
   $color: map-get(map-get($material-colors, $color-name),$color-variant);
   @if $color {
     @return $color;
   } @else {
     // Libsass still doesn't seem to support @error
-    @warn "=> ERROR: COLOR NOT FOUND! <= | Your $color-name, $color-variant combination did not match any of the values in the $material-colors map.";
+    @warn "=> ERROR: COLOR NOT FOUND! <= | Your $color-name (#{$color-name}), $color-variant (#{$color-variant}) combination did not match any of the values in the $material-colors map.";
   }
 }
